@@ -1,0 +1,10 @@
+data/
+uploads/
+__pycache__/
+*.pyc
+.idea/
+.venv/
+*.sqlite
+users.json
+secret.key
+.env
