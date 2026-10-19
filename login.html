@@ -1,0 +1,17 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Login - HS Code Tool</title>
+<style>
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:#0b0f1a;color:#e2e8f0;font-family:Inter,Segoe UI,sans-serif}
+form{background:#141928;border:1px solid #252f45;border-radius:14px;padding:2rem;width:min(360px,90vw)}
+h1{font-size:1.2rem;margin:0 0 1.2rem}label{display:block;font-size:.75rem;color:#64748b;text-transform:uppercase;margin:.8rem 0 .3rem}
+input{width:100%;box-sizing:border-box;padding:.7rem;border-radius:9px;border:1.5px solid #252f45;background:#1c2438;color:#e2e8f0;font-size:.95rem}
+button{width:100%;margin-top:1.2rem;padding:.8rem;border:0;border-radius:9px;background:linear-gradient(135deg,#3b82f6,#6366f1);color:#fff;font-weight:600;font-size:.95rem;cursor:pointer}
+.err{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:#fca5a5;padding:.6rem .8rem;border-radius:9px;margin-bottom:.5rem;font-size:.85rem}
+</style></head><body>
+<form method="post">
+<h1>🛃 HS Code Tool – Sign in</h1>
+{% if error %}<div class="err">{{ error }}</div>{% endif %}
+<label>User ID</label><input name="username" autofocus autocomplete="username" required/>
+<label>Password</label><input name="password" type="password" autocomplete="current-password" required/>
+<button type="submit">Sign in</button>
+</form></body></html>
